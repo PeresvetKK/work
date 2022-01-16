@@ -1,0 +1,51 @@
+.tabs-container{
+    margin: 45px 30px 0 30px;
+    padding: 50px 0;
+}
+.tabs{
+    margin: 0 0 50px 0;
+    &__items{
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        flex: 0 1 32%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        text-align: center;
+    }
+    &__block{
+        position: relative;
+        padding: 20px;
+        line-height: 24px;
+        display: none;
+        background-color: #252526;
+        &:nth-child(1)::before{
+            background-color: $green;
+            left: 0;
+        }
+        &:nth-child(2)::before{
+            background-color: $green;
+            left: 34%;
+        }
+        &:nth-child(3)::before{
+            background-color: $green;
+            right: 0;
+        }
+        &:target{
+            display: block;
+        }
+        &::before{
+            content: "";
+            height: 50px;
+            width: 32%;
+            position: absolute;
+            top: -50px;
+        }
+    }
+}

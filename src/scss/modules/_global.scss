@@ -1,0 +1,133 @@
+@import "./modules/_vars";
+@import "./modules/_fonts";
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+body{
+    width: 100%;
+    font-family: 'merriweather-regular';
+    font-size: 16px;
+    line-height: 200%;
+    color: $mw;
+    letter-spacing: 0.04em;
+    background-color: #252526;
+}
+h1,h2,h3,h4{
+    font-family: 'oswald-bold';
+    text-transform: uppercase;
+    color: $mw;
+}
+h1{
+    font-size: 36px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+h2{
+    font-size: 2.3em;
+    line-height: 117%;
+    letter-spacing: .02em;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 16px;
+    line-height: 150%;
+}
+a{
+    display: inline-block;
+    text-decoration: none; 
+    text-transform: uppercase;
+    color: $mw;
+    font-family: 'oswald-bold';
+    font-size: 14px;
+    line-height: 200%;
+}
+p{
+    color: $ns25;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+.container{
+    margin: 45px 0 0 30px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__list:not(:first-child){
+        margin-left: 32px;
+    }
+    &__link{
+        border-bottom: 3px solid transparent;
+    }
+    &__link:hover{
+        border-bottom: 3px solid #b0dce2;
+    }
+}
+.btn{
+    font-size: 12px;
+    font-family: 'oswald-bold';
+    line-height: 200%;
+    width: 137px;
+    color: $mw;
+    background: $green;
+    border: 2px solid $green;
+    padding: 4px 0px;
+    transition: all .3s;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    &:hover{
+        color: $ns;
+        background: $bw;
+        border: 2px solid $bw; 
+    }
+    &:active{
+        background: $bwb;
+    }
+}
+.disp-none{
+    display: none;
+}
+.w100{
+    width: 100% !important;
+}
+.fixed__scroll{
+    overflow-y: hidden;
+}
+.title{
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border-left: 4px solid $green;
+}

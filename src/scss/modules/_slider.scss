@@ -1,0 +1,33 @@
+@import "../../../node_modules/swiper/swiper";
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 45px;
+    &__item{
+        max-width: 330px;
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+.inner-item{
+    padding: 0 20px 20px 20px;
+    &__selected{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__price{
+        font-family: 'oswald-bold';
+        color: $mw;
+    }
+}
+@media screen and (max-width: 421px) {
+    .slider__container{
+        margin: 45px 30px 0 30px;
+    }
+    .inner-item__selected{
+        flex-direction: column;
+    }
+}

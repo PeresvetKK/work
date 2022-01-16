@@ -1,0 +1,32 @@
+.aside{
+    background-color: rgb(37, 37, 38);
+    min-width: 120px;
+    &__container{
+        padding: 48px 0 0 10px;
+        position: fixed;
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.plus{
+    position: fixed;
+    z-index: 10;
+    width: 27px;
+    height: 31px;
+    margin-top: 15px;
+    cursor: pointer;
+    &__inner{
+        transition: all ease .5s;
+        width: inherit;
+        height: inherit;
+    }
+    span{
+        font-size: 40px;
+    }
+}
+.rotate{
+    transition: all ease .5s;
+    transform: rotate(-136deg);
+}

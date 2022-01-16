@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+    "title": "Главная",
+    "style": "style.min.css",
+})
+<body>
+    @@include('html/header.html',{})
+    <main class="main">
+        @@include('html/aside.html', {})
+        <article class="content">
+            <section class="action-content">
+                <div class="container">
+                    <h1 class="main-title">Доставка еды</h1>
+                    <h2 class="action-content__title title">Акции</h2>
+                    <div class="action-content__card action-card">
+                        @@include('html/actionCard.html', {})
+                        @@include('html/actionCard.html', {})
+                        @@include('html/actionCard.html', {})
+                        @@include('html/actionCard.html', {})
+                        @@include('html/actionCard.html', {})
+                        @@include('html/actionCard.html', {})
+                        @@include('html/actionCard.html', {})
+                        @@include('html/actionCard.html', {})
+                        @@include('html/actionCard.html', {})
+                    </div>
+                </div>
+            </section>
+            <section class="slider-section">
+                <div class="container slider__container">
+                    <h2 class="title">мясные блюда</h2>
+                    <div class="slider swiper-container">
+                        <div class="swiper-wrapper">
+                            @@include('html/swiperSlide.html', {
+                                "img": "yagnen.png",
+                                "title": "Ягненок",
+                                "text": "С гречневой, курагой, апельсином и зеленым яблоком",
+                                "price": "650 Р",
+                            })
+                            @@include('html/swiperSlide.html', {
+                                "img": "indea.png",
+                                "title": "Индейка",
+                                "text": "С гречневой кашей, курагой, апельсином и зеленым яблоком",
+                                "price": "450 Р",
+                            })
+                            @@include('html/swiperSlide.html', {
+                                "img": "yagnen.png",
+                                "title": "Ягненок",
+                                "text": "С гречневой кашей, курагой, апельсином и зеленым яблоком",
+                                "price": "650 Р",
+                            })
+                            @@include('html/swiperSlide.html', {
+                                "img": "indea.png",
+                                "title": "Индейка",
+                                "text": "С гречневой кашей, курагой, апельсином и зеленым яблоком",
+                                "price": "450 Р",
+                            })
+                            @@include('html/swiperSlide.html', {
+                                "img": "yagnen.png",
+                                "title": "Ягненок",
+                                "text": "С гречневой кашей, курагой, апельсином и зеленым яблоком",
+                                "price": "650 Р",
+                            })
+                            @@include('html/swiperSlide.html', {
+                                "img": "indea.png",
+                                "title": "Индейка",
+                                "text": "С гречневой кашей, курагой, апельсином и зеленым яблоком",
+                                "price": "450 Р",
+                            })
+                        </div>
+                    </div>
+                </div>
+                @@include('html/modal.html', {})
+            </section>
+            <section class="delivery-section">
+                <div class="container delivery__container">
+                    <h2 class="title">Условия доставки</h2>
+                    <div class="delivery">
+                        <div class="delivery__inner">
+                            <button class="delivery__btn">У наших курьеров всегда должна быть сдача!</button>
+                            <div class="delivery__textbox">
+                                <p class="delivery__text">Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам</p>
+                            </div>
+                        </div>
+                        <div class="delivery__inner">
+                            <button class="delivery__btn">У наших курьеров всегда должна быть сдача!</button>
+                            <div class="delivery__textbox">
+                                <p class="delivery__text">Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам</p>
+                            </div>
+                        </div>
+                        <div class="delivery__inner">
+                            <button class="delivery__btn">У наших курьеров всегда должна быть сдача!</button>
+                            <div class="delivery__textbox">
+                                <p class="delivery__text">Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs-container container">
+                    <div class="tabs">
+                        <nav class="tabs__items">
+                            <a href="#tab_01" class="tabs__item">Мясные блюда</a>
+                            <a href="#tab_02" class="tabs__item">Жидкие блюда</a>
+                            <a href="#tab_03" class="tabs__item">Веганские блюда</a>
+                        </nav>
+                        <div class="tabs__body">
+                            <div id="tab_01" class="tabs__block">
+                                Мясные блюда. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, repellendus!
+                            </div>
+                            <div id="tab_02" class="tabs__block">
+                                Жидкие блюда. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, repellendus!
+                            </div>
+                            <div id="tab_03" class="tabs__block">
+                                Веганские блюда. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, repellendus!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+
+
+    @@include('html/footer.html',{})
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
