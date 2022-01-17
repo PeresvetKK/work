@@ -5,7 +5,11 @@ menu;
 dropdown - в меню при клике на каталог;
 
 content:
+
 slider;
-modal - при клике "в корзину"
+
+modal - при клике "в корзину";
+
 dropdown - версия 2;
+
 tabs;
